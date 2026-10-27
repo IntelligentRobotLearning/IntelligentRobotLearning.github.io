@@ -125,35 +125,99 @@ nav {
   .imagedescription {float: right; width: 30%;box-sizing: border-box;background-color: #D8D8D8; height: 385px; padding: 60px     40px;}
   .imagedescription h4 {font-size: 20px; line-height: 60px;}
 
-  
+  .about {
+  width: 100%;
+  height: auto;
+  float: none;
+  padding-bottom: 50px;
+}
+
+.about h3 {
+  color: #145DA0;
+  line-height: 50px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 850px;
+  max-width: 100%;
+}
+
+.about-text {
+  flex: 0 0 650px;
+  max-width: 650px;
+}
+
+.about-text p {
+  font-size: 16px;
+  margin: 0;
+  text-align: justify;
+}
+
 .Picture {
-    .picture h3 {color: #eff0f0; line-height: 0cap;}
-    position: relative;
-    top: -2160px;  
-    right: -670px; 
-
-}
-  
-
-.about {
-	width: 70%; height: auto; float: left; padding-bottom: 50px;
- }
-  .about h3 {color: #145DA0; line-height: 50px;}
-  .about p {
-	font-size: 16px;
-	margin: 0 60px 0 0;
-	text-align: justify;
+  flex: 0 0 170px;
+  width: 170px;
+  position: static;
+  text-align: center;
 }
 
+.Picture img {
+  width: 120px;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 
-.news {
-	width: 70%; height: auto; float: left; padding-bottom: 50px;
+.about .Picture p {
+  margin: 10px 0 0 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.about .Picture a {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    width: 100%;
   }
-  .news h3 {color: #145DA0; line-height: 50px;}
-  .news p {
-	font-size: 16px;
-  margin: 0 0 0 0;
-	text-align: justify;
+
+  .about-text {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Picture {
+    margin: 0 auto;
+  }
+}
+
+
+
+.News {
+  width: 70%;
+  height: auto;
+  float: left;
+  padding-bottom: 50px;
+  clear: both;
+}
+
+.News h3 {
+  color: #145DA0;
+  line-height: 50px;
+}
+
+.News p {
+  font-size: 16px;
+  margin: 0;
+  text-align: justify;
 }
 
 .clearfix {zoom: 1;}
@@ -508,3 +572,4 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
